@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossfade Scroll Gallery</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/plg4ufk.css">
+    <script src="https://kit.fontawesome.com/8f1f53b08b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>May Days</h1>
+        <h2>Central Virginia, 2024</h2>
+    </header>
+    <main>
+        <section>
+            <div class="image-box">
+                <div class="swapper">
+                    <div class="progress">
+                        <div><div></div></div>
+                        <div><div></div></div>
+                    </div>
+                    <div class="caption">
+                        <h3>The world comes alive</h3>
+                        <p>Explosions of greenery and gold sooth the eyes.</p>
+                    </div>
+                    <img class="gallery-img"  src="images/May21-24_1.png" alt="golden grass">
+                    <img class="gallery-img"  src="images/May21-24_2.png" alt="lily buds">
+                </div>
+                <div class="controller">
+                    <img class="gallery-img"  src="images/May21-24_3.png" alt="greenery">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="image-box">
+                <div class="controller">
+                    <img class="gallery-img"  src="images/May21-24_5.png" alt="pink flower">
+                </div>
+                <div class="swapper">
+                    <div class="progress">
+                        <div><div></div></div>
+                        <div><div></div></div>
+                    </div>
+                    <div class="caption">
+                        <h3>Bright blooms and broken trinkets</h3>
+                        <p>blend together seamlessly in a cacaphony of color.</p>
+                    </div>
+                    <img class="gallery-img"  src="images/May21-24_4.png" alt="broken trinkets">
+                    <img class="gallery-img"  src="images/May21-24_6.png" alt="red lily">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="image-box">
+                <div class="swapper">
+                    <div class="progress">
+                        <div><div></div></div>
+                        <div><div></div></div>
+                    </div>
+                    <div class="caption">
+                        <h3>Radiant reds...</h3>
+                        <p>infuse bursts of life - both flora and fauna.</p>
+                    </div>
+                    <img class="gallery-img"  src="images/May21-24_7.png" alt="red lilies">
+                    <img class="gallery-img"  src="images/May21-24_8.png" alt="red salamander">
+                </div>
+                <div class="controller">
+                    <img class="gallery-img"  src="images/May21-24_9.png" alt="red salamander on muted saturation background">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="image-box">
+                <div class="controller">
+                    <img class="gallery-img"  src="images/May21-24_10.png" alt="rivanna river">
+                </div>
+                <div class="swapper">
+                    <div class="progress">
+                        <div><div></div></div>
+                        <div><div></div></div>
+                    </div>
+                    <div class="caption">
+                        <h3>Springtime rainstorms replenish the river</h3>
+                        <p>infused with virginia red clay, it evinces an energy that calls out to sweet creatures.</p>
+                    </div>
+                    <img class="gallery-img"  src="images/May21-24_11.png" alt="rivanna river">
+                    <img class="gallery-img"  src="images/May21-24_12.png" alt="dogs by rivanna river">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="image-box">
+                <div class="swapper">
+                    <div class="progress">
+                        <div><div></div></div>
+                        <div><div></div></div>
+                    </div>
+                    <div class="caption">
+                        <h3>This routine radiant rebirth</h3>
+                        <p>tempts all to enjoy the outdoors.</p>
+                    </div>  
+                    <img class="gallery-img"  class="gallery-img" src="images/May21-24_13.png" alt="dog in the woods">                  
+                </div>
+                <div class="controller">
+                    <img class="gallery-img"  src="images/May21-24_14.png" alt="carved heart">
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="lightbox" class="lightbox hidden">
+        <div class="lightbox-content">
+            <span class="close">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </span>
+            <img src="" alt="" class="lightbox-img">
+            <div class="nav-container">
+                <button id="prev">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                </button>
+                <button id="next">
+                    <i class="fa-solid fa-circle-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="lightbox.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
